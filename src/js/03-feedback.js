@@ -23,8 +23,8 @@ formREf.addEventListener('submit', function (e) {
 function returnSevedMessage() {
   let parstLocalStorage = JSON.parse(localStorage.getItem(STORAGE_KEY));
   if (parstLocalStorage) {
-    parstLocalStorage.email ? (emailREf.value = parstLocalStorage.email) : (emailREf.value = ' ');
-    parstLocalStorage.message ? (textREf.value = parstLocalStorage.message) : (textREf.value = ' ');
+    parstLocalStorage.email ? (emailREf.value = parstLocalStorage.email) : (emailREf.value = 'email');
+    parstLocalStorage.message ? (textREf.value = parstLocalStorage.message) : (textREf.value = 'message');
   }
 }
 
