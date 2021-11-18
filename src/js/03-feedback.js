@@ -29,6 +29,7 @@ function onFormClear(evt) {
   localStorage.removeItem(STORAGE_KEY);
 }
 
+// проверка состояния хранилища и, если там есть сохраненные данные, заполнение ими полей формы
 function localStorageCheck() {
   if (localStorage.getItem(STORAGE_KEY)) {
     emailInput.value = parsedData.email;
