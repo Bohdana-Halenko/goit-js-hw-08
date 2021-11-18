@@ -4,4 +4,4 @@ var t=arguments[3],n="Expected a function",e=NaN,i="[object Symbol]",r=/^\s+|\s+
 },{}],"TTyb":[function(require,module,exports) {
 "use strict";var e=t(require("lodash.throttle"));function t(e){return e&&e.__esModule?e:{default:e}}const a=document.querySelector(".feedback-form"),o=a.querySelector('input[type="email"]'),r=a.querySelector('textarea[name="message"]'),l="feedback-form-state";a.addEventListener("input",(0,e.default)(u,500));const n={};function u(e){n[o.name]=o.value,n[r.name]=r.value,localStorage.setItem(l,JSON.stringify(n))}const c=localStorage.getItem(l),s=JSON.parse(c);function m(e){e.preventDefault(),console.log(`${o.name}:`,o.value),console.log(`${r.name}:`,r.value),e.currentTarget.reset(),localStorage.removeItem(l)}function i(){localStorage.getItem(l)&&(o.value=s.email,r.value=s.message)}a.addEventListener("submit",m),i();
 },{"lodash.throttle":"FNyO"}]},{},["TTyb"], null)
-//# sourceMappingURL=/goit-js-hw-08/03-feedback.dd81e2a4.js.map
+//# sourceMappingURL=/goit-js-hw-08/03-feedback.9c61a0f8.js.map
