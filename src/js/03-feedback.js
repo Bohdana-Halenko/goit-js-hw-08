@@ -15,7 +15,7 @@ function saveInputData(e) {
 formREf.addEventListener('input', throttle(saveInputData, 500));
 formREf.addEventListener('submit', function (e) {
   e.preventDefault();
-  e.target.reset();
+  e.currentTarget.reset();
   console.log(localStorage.getItem(STORAGE_KEY));
   localStorage.removeItem(STORAGE_KEY);
 });
