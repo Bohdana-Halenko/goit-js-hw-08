@@ -1,4 +1,5 @@
-const throttle = require('lodash.throttle');
+import throttle from 'lodash.throttle';
+
 const formREf = document.querySelector('.feedback-form');
 const emailREf = formREf.querySelector('input');
 const textREf = formREf.querySelector('textarea');

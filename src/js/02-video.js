@@ -1,5 +1,5 @@
+import throttle from "lodash.throttle";
 const iframe = document.querySelector("#vimeo-player");
-const throttle = require("lodash.throttle");
 
 //подключение VimeoPlayer - npm
 const player = new Vimeo.Player(iframe);
